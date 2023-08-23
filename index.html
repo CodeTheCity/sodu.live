@@ -1,3 +1,9 @@
+---
+year: 2023
+date: 18 - 19 November 2023
+ticket_link: "https://ti.to/code-the-city/sodu-2023"
+---
+
 <!doctype html>
 
 <html lang="en">
@@ -5,30 +11,35 @@
 <head>
     <meta charset="utf-8">
 
-    <title>SODU 2022</title>
-    <meta name="description" content="SODU 2022">
-    <meta name="author" content="CodeTheCity">
+    <title>SODU {{ page.year }}</title>
+    <meta name="description" content="SODU {{ page.year }}">
+    <meta name="author" content="Code The City">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="center">
-        <img src="images/SODU2022_logo.png" width="292" height="492" alt="SODU 2022 logo" />
+        <img src="images/SODU_logo_{{ page.year }}.png" width="324" height="480" alt="SODU {{ page.year }} logo" />
 
 
-        <h1>5 - 6 November 2022</h1>
+        <h1>{{page.date}}</h1>
 
-        <h2>The return of Scottish Open Data Unconference</h2>
+        <h2>The Scottish Open Data Unconference</h2>
         <span id="countdown"></span>
 
-        <p>An in person and online event brought to you by <a href="https://www.codethecity.org">Code the City</a>.</p>
+        <p>An in person event brought to you by <a href="https://www.codethecity.org">Code the City</a>.</p>
 
         <div class="container">
             <h1>Tickets</h1>
-            <a id="tickets" href="https://ti.to/code-the-city/sodu-2022">Purchase tickets now</a>
+            <a id="tickets" href="{{page.ticket_link}}">Purchase tickets now</a>
+            {% comment %}
             <p>
                 We have single day tickets as well as weekend long ones.
+            </p>
+            {% endcomment %}
+            <p>
+                Early bird tickets now available for a low price!
             </p>
             <p>
                 Whilst tickets have a suggested donation to help with charity
@@ -56,29 +67,22 @@
             </p>
 
             <p>
-                Sessions in open space always work best when there is an interactive aspect so that the participants
-                talk as
-                much as the person chairing the session. This <a href="https://www.youtube.com/watch?v=M_jhcvCYBbg&feature=youtu.be" target="_blank">short video</a>
-                will tell you more about open space. The amazing
-                thing is that it scales really well from 20 people to over 1000 people.
+                Sessions in open space always work best when there is an interactive aspect so that the participants talk as much as the person chairing the session. This <a href="https://www.youtube.com/watch?v=M_jhcvCYBbg" target="_blank">short video</a> will tell you more about open space. The amazing thing is that it scales really well from 20 people to over 1000 people.
             </p>
 
-            <p>If you want to keep up to date with news as plans develop, why not join the <a href="https://join.slack.com/t/soduaberdeen/shared_invite/zt-1cpne7x92-rDF7AzZslBQpO2q1AYv26w">Scottish Open Data Slack Group</a>?</p>
+            <p>If you want to keep up to date with news as plans develop, why not join the <a href="https://opendata.scot/slack">Scottish Open Data Slack Group</a>?</p>
 
 
         </div>
 
+        {%comment%}
         <div class="container">
             <h2>Supported by The Data Lab</h2>
             <a href="https://thedatalab.com"><img src="images/TDL_Black-transp.png" alt="The Data Lab logo" /></a>
         </div>
-
-        <div class="container">
-            <p><a href="https://codethecity.org/policy-for-reducing-the-spread-of-infectious-diseases/">Our policy for reducing the spread of infectious diseases</a></p>
-        </div>
+        {%endcomment%}
     </div>
 
     <script src="js/countdown.js"></script>
 </body>
-
 </html>

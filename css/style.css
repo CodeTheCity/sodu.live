@@ -1,0 +1,112 @@
+:root {
+    --primary: #f190a7;
+    --secondary: #ed1b4e;
+  }
+
+body {
+    margin: 10px;
+    padding-top: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-color:whitesmoke;
+    color: black;
+    justify-content: center;
+}
+
+h1 {
+    color: var(--primary);
+}
+
+h2 {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+h3 {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+#countdown {
+  background-color: var(--primary);
+  color: whitesmoke;
+  padding: 10px;
+  font-size: large;
+  font-weight: bold;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+}
+
+a:link, a:visited {
+  color:var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: var(--primary);
+  color: whitesmoke;
+}
+
+#tickets,
+#tickets a:link,
+#tickets a:visited {
+  background: var(--secondary);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: black;
+  font-size: 30px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#tickets:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    
+    @media screen and (min-width: 600px){ 
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+
+  
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 670px;
+    
+    @media screen and (min-width: 600px){ 
+      padding: 0 30px;
+    }
+  }
+  
