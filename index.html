@@ -22,30 +22,36 @@ ticket_link: "https://ti.to/code-the-city/sodu-2023"
     <div class="center">
         <img src="images/SODU_logo_{{ page.year }}.png" width="324" height="480" alt="SODU {{ page.year }} logo" />
 
-
+        <div class="container">
+            <a id="tickets" href="https://docs.google.com/spreadsheets/u/2/d/1bOJ6nONso9UULZBLINmpPukCUltJDbPtswZ-Nbv65AI/edit#gid=11">Session grid</a>            
+        </div>
         <h1>{{page.date}}</h1>
 
         <h2>The Scottish Open Data Unconference</h2>
-        <span id="countdown"></span>
+        {% comment %}<span id="countdown"></span>{% endcomment %}
 
         <p>An in person event brought to you by <a href="https://www.codethecity.org">Code the City</a>.</p>
 
+        {% comment %}
         <div class="container">
+            {% comment %}
+
             <h1>Tickets</h1>
             <a id="tickets" href="{{page.ticket_link}}">Purchase tickets now</a>            
             <p>
                 We have single day tickets as well as weekend long ones.
             </p>
-            {% comment %}
             <p>
                 Early bird tickets now available for a low price!
             </p>
-            {% endcomment %}
+            
             <p>
                 Whilst tickets have a suggested donation to help with charity
                 running costs, this should not be a barrier to anyone attending.
             </p>
+            {% endcomment %}
         </div>
+        {% endcomment %}
 
         <div class="container">
             <h1>The Unconference</h1>
@@ -82,7 +88,10 @@ ticket_link: "https://ti.to/code-the-city/sodu-2023"
         </div>
         {%endcomment%}
     </div>
+    {% comment %}
 
     <script src="js/countdown.js"></script>
+
+    {% endcomment %}
 </body>
 </html>
